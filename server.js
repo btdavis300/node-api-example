@@ -1,14 +1,15 @@
 // Similar to React, you must require your libraries and frameworks
 // require('dotenv').config() // connects .env file to server.js if using dotenv npm package
 
+require('dotenv').config() // great for development. When put in .gitignore, .env will hide mongo connection strings on repo.
 const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
 
 
-var mongoDB = 'mongodb+srv://admin:nvt.buz4TVW9fxu*pfp@nodeapiexample.f9ktcz9.mongodb.net/node-api?retryWrites=true&w=majority' // mongo string connect, I got this to work through setting up a free database on mongoDB.com. port number comes from Mongo
+
 mongoose.connect(
-    mongoDB,
+    process.env.DATABASE_URL, // mongo connection string (from .env), I got this to work through setting up a free database on mongoDB.com. 
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
