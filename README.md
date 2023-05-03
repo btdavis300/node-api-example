@@ -1,0 +1,3 @@
+# Node.js with Express and Mongo REST API
+
+This is the readme for this node.js example. This repo contains basic construct for node set up for API CRUD actions with comments explaining the innerworkings. Set up instructions will live here...
