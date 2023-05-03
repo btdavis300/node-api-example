@@ -1,0 +1,19 @@
+{
+  "name": "node-api-example",
+  "version": "1.0.0",
+  "description": "Basic API made with Node.js and Express",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Brennan Davis",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongodb": "^5.3.0",
+    "mongoose": "^5.5.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
